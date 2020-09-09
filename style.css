@@ -1,0 +1,65 @@
+body {
+  font-family: "Helvetica", sans-serif;
+  font-size: 0.75rem;
+}
+
+label {
+  display: block;
+  padding-top: 4%;
+}
+
+form {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: hsl(214, 82%, 67%);
+  margin: 0 auto;
+  padding: 1.5%;
+}
+
+.box {
+  width: 33%;
+  height: auto;
+  color: white;
+  margin: 20px;
+}
+
+input,
+textarea,
+select {
+  background-color: hsl(214, 82%, 67%);
+  border: 2px solid white;
+  padding: 2%;
+  margin-top: 1%;
+}
+
+input::placeholder {
+  color: black;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: 1px solid grey;
+}
+
+.box input,
+textarea,
+select {
+  width: 90%;
+}
+
+.box select {
+  width: 94%;
+}
+
+select.arrows {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA3klEQVRIS+3VMU9CMRTF8d8zBL+aizoQFhx0kUk33RzdYMNFXUFnYeGrYYyaJiUxJHDLSxodbNKpfeffc9/pbaPyaCrr+3OA++z4rtT5Pg5GuMnCY9yWQEoBE1xhlUUP8YDrCBIB0vojLvGO0yz4hm4JJAKcYYoPHGOZAUdYoIMBXrc5iQAHeMlzviFygj7O8dkWEJU4XI8chALRhn9AVKHf70VRTHu4wFfbmKZLNKt50dLBnna0imcMd/2I0phWa3Y/D1e1Xa9BCZJG0VuQNpaWKMx72xS1Fl5/WN3BN+AgJhnZQlq4AAAAAElFTkSuQmCC");
+  background-position: calc(100% - 0.5rem), 100% 0;
+  background-size: 1.5em 1.5em;
+  background-repeat: no-repeat;
+}
+
+select {
+  appearance: none;
+}
